@@ -28,7 +28,7 @@ from helpers import text_to_labels, labels_to_text
 batch_size = 64
 root = '/vol/bitbucket/bh1511/GRID_AV/data'
 tokenizer = Tokenizer.from_file("/vol/bitbucket/bh1511/data/dataset/grid.json")
-vf_root = '/vol/bitbucket/bh1511/data'
+vf_root = '/vol/bitbucket/mx520/video_feature'
 speaker_list = os.listdir(root)
 test = ["s1","s2","s20","s22"]
 validation = ["s3","s4","s23","s24"]
