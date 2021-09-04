@@ -1,0 +1,9 @@
+executable              = data_construction.sh
+arguments	            = $(Process)
+log                     = data_construction.log
+output		            = video.$(Process).out
+error		            = video.$(Process).err
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+requirements            = regexp("^(vertex|ray|sprite|edge|)[0-9][0-9]", TARGET.Machine)  
+queue 3600
